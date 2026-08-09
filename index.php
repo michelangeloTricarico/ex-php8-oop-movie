@@ -27,8 +27,8 @@
                     echo '      <div class="card-body">';
                     echo '        <h2 class="card-title h4">' . $movie->name . '</h2>';
                     echo '        <p class="mb-1"><strong>Anno:</strong> ' . $movie->year . '</p>';
-                    echo '        <p class="mb-1"><strong>Genere:</strong> ' . $movie->getGenre()->getGenre() . '</p>';
-                    echo '        <p class="mb-1"><strong>Descrizione Genere:</strong> ' . $movie->getGenre()->getDescription() . '</p>';
+                    echo '        <p class="mb-1"><strong>Genere:</strong> ' . $movie->getGenre()[0] . '</p>';
+                    echo '        <p class="mb-1"><strong>Descrizione Genere:</strong> ' . $movie->getGenre()[1] . '</p>';
                     echo '        <p class="mb-1"><strong>Regista:</strong> ' . $movie->getDirector() . '</p>';
                     echo '        <p class="mb-0"><strong>Trama:</strong> ' . $movie->abstract . '</p>';
                     echo '      </div>';

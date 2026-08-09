@@ -25,6 +25,6 @@ class Movie{
     }
 
     public function getGenre() {
-        return $this->genre;
+        return [$this->genre->getGenre(),$this->genre->getDescription()];
     }
 }
